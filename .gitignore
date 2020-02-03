@@ -1,9 +1,0 @@
-# Compiled class file
-*.class
-
-*.project
-*.classpath
-
-/.idea
-/target
-/log
