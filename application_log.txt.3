@@ -1,0 +1,18 @@
+янв. 30, 2020 10:38:57 AM schepov.javatr.bank.controller.exception.command.impl.DifferentExceptionCommand execute
+WARNING: Failed to execute operation!
+schepov.javatr.bank.controller.exception.SignUpControllerException: Failed to sign up!
+	at schepov.javatr.bank.controller.command.impl.SignUp.execute(SignUp.java:42)
+	at schepov.javatr.bank.controller.Controller.execute(Controller.java:29)
+	at schepov.javatr.bank.view.View.callController(View.java:49)
+	at schepov.javatr.bank.view.View.authorize(View.java:26)
+	at schepov.javatr.bank.view.View.run(View.java:125)
+	at schepov.javatr.bank.main.Main.main(Main.java:20)
+Caused by: schepov.javatr.bank.srvc.exception.ClientServiceException: schepov.javatr.bank.dao.exception.DAOException
+	at schepov.javatr.bank.srvc.impl.ClientServiceImpl.signUp(ClientServiceImpl.java:24)
+	at schepov.javatr.bank.controller.command.impl.SignUp.execute(SignUp.java:35)
+	... 5 more
+Caused by: schepov.javatr.bank.dao.exception.DAOException
+	at schepov.javatr.bank.dao.impl.TextFileUserDAO.signUp(TextFileUserDAO.java:25)
+	at schepov.javatr.bank.srvc.impl.ClientServiceImpl.signUp(ClientServiceImpl.java:22)
+	... 6 more
+

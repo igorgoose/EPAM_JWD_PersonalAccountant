@@ -1,0 +1,14 @@
+янв. 30, 2020 10:50:54 AM schepov.javatr.bank.controller.exception.command.impl.LogInExceptionCommand execute
+WARNING: Failed to log in!
+schepov.javatr.bank.controller.exception.LogInControllerException: Failed to log in!
+	at schepov.javatr.bank.controller.command.impl.LogIn.execute(LogIn.java:35)
+	at schepov.javatr.bank.controller.Controller.execute(Controller.java:29)
+	at schepov.javatr.bank.view.View.callController(View.java:49)
+	at schepov.javatr.bank.view.View.authorize(View.java:30)
+	at schepov.javatr.bank.view.View.run(View.java:125)
+	at schepov.javatr.bank.main.Main.main(Main.java:20)
+Caused by: schepov.javatr.bank.srvc.exception.ClientServiceException: Invalid login or password!
+	at schepov.javatr.bank.srvc.impl.ClientServiceImpl.logIn(ClientServiceImpl.java:32)
+	at schepov.javatr.bank.controller.command.impl.LogIn.execute(LogIn.java:30)
+	... 5 more
+
